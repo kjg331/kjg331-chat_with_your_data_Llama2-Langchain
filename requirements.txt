@@ -1,0 +1,9 @@
+streamlit
+huggingface_hub
+langchain
+llama-cpp-python
+chromadb bs4
+faiss-cpu
+sentence-transformers
+docarray
+googletrans==4.0.0rc1
