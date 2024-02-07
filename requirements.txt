@@ -6,3 +6,4 @@ faiss-cpu
 sentence-transformers
 googletrans==4.0.0rc1
 beautifulsoup4
+langchain-community
