@@ -5,4 +5,4 @@ llama-cpp-python
 faiss-cpu
 sentence-transformers
 googletrans==4.0.0rc1
-chromadb
+beautifulsoup4
