@@ -24,7 +24,7 @@ from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 from langchain.memory import StreamlitChatMessageHistory
 
 from googletrans import Translator
-import beautifulsoup4 as bs4
+import bs4
 
 DB_FAISS_PATH = 'vectorstore/db_faiss'
 
