@@ -23,9 +23,6 @@ from langchain.callbacks.manager import CallbackManager
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 from langchain.memory import StreamlitChatMessageHistory
 
-
-import bs4
-
 from googletrans import Translator
 
 
