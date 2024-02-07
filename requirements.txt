@@ -4,5 +4,5 @@ langchain
 llama-cpp-python
 faiss-cpu
 sentence-transformers
-docarray
 googletrans==4.0.0rc1
+chromadb
