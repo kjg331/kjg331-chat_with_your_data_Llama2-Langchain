@@ -2,7 +2,6 @@ streamlit
 huggingface_hub
 langchain
 llama-cpp-python
-chromadb bs4
 faiss-cpu
 sentence-transformers
 docarray
