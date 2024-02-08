@@ -199,9 +199,9 @@ def load_db(file):
     qa = None
     qa = ConversationalRetrievalChain.from_llm(
         llm=LlamaCpp(model_path=model_path,
-                     max_tokens= 1024,
+                     max_tokens= 800,
                      #n_gpu_layers = 40,
-                     callback_manager=CallbackManager([StreamingStdOutCallbackHandler()]),
+                     #callback_manager=CallbackManager([StreamingStdOutCallbackHandler()]),
                      n_ctx=4096, # Context window
                      verbose = True,
                      temperature=0.1,
