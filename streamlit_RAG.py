@@ -187,7 +187,7 @@ def load_db(file):
     db = FAISS.from_documents(docs, embeddings)
 
     # define retriever
-    retriever = db.as_retriever(search_type="similarity", vervose = True, search_kwargs={"k": 3})
+    retriever = db.as_retriever(search_type="similarity", vervose = True, search_kwargs={"k": 2})
 
     # create a chatbot chain. Memory is managed externally.
 
@@ -199,10 +199,11 @@ def load_db(file):
     qa = None
     qa = ConversationalRetrievalChain.from_llm(
         llm=LlamaCpp(model_path=model_path,
-                     max_tokens= 800,
-                     #n_gpu_layers = 40,
-                     #callback_manager=CallbackManager([StreamingStdOutCallbackHandler()]),
-                     n_ctx=4096, # Context window
+                     max_tokens= 1024,
+                     callback_manager=CallbackManager([StreamingStdOutCallbackHandler()]),
+                     n_ctx=2048, # Context window
+                     n_batch = 1024,
+                     f16_kv=True,
                      verbose = True,
                      temperature=0.1,
                      repeat_penalty=1.2),
